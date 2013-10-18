@@ -2,26 +2,26 @@
 /*-- px to em conversion by http://pxtoem.com/ using 16px as base px size. --*/
 
 /*-- Overall Styling Code --*/
-#staff { 
-margin: 3.125em auto; 
-width: 62.500em; 
-height: 37.500em; 
-position: relative; 
+#staff {
+margin: 3.125em auto;
+width: 62.500em;
+height: 37.500em;
+position: relative;
 padding: 3.125em;
-background-color: #ffffff; 
+background-color: #ffffff;
 }
 
 /* Minifigure image */
-#minifig { 
-position: relative; 
+#minifig {
+position: relative;
 left: 40.625em;
 top: 6.250em;
 }
 
 /* Staff Members header */
-#staff h2 { 
-font-size:1.5em; 
-border-bottom: 5px solid black; 
+#staff h2 {
+font-size:1.5em;
+border-bottom: 5px solid black;
 color: #634CE1;
 }
 
@@ -53,10 +53,10 @@ a:hover { color: #7058C0; text-decoration: underline; opacity: 0.8; }
 
 /* Box ID labels */
 h3 {
-width: 12.500em; 
-position: absolute; 
+width: 12.500em;
+position: absolute;
 /* color: #636363;  */
-color: #2B2B2B; 
+color: #2B2B2B;
 }
 
 /* -- Individual Box Styling Code -- */
