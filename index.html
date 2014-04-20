@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <title>LUNF Staff Members</title>
-    <!-- LUNF Logo Favicon -->
-    <link rel="icon" id="favicon" href="https://raw.github.com/LEGOUniverseNews/LUN-Logo/master/LUN-logo-80x80.png" />
+  <meta charset="UTF-8">
+  <title>LUNF Staff Members</title>
 
-    <!-- CSS Styling -->
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-<!-- HTML Design and Layout by Hobino and le717 -->
-<div id="staff">
-<h2>Staff Members</h2>
+  <!-- HTML Design and Layout by Hobino and le717 -->
+  <div id="staff">
+    <h2>Staff Members</h2>
 
-<h3 id="adminh">Founders</h3>
-<div id="admin" class="box">
-<ul>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u1">LegoFan101</a></li>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u10">Grizzly10513</a></li>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u52">CapnSkye</a></li>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u24">Cabey9</a></li>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u11">Hobino</a></li>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u109">rioforce</a></li>
-</ul>
-</div>
+    <h3 id="adminh">Founders</h3>
+    <div id="admin" class="box">
+    <ul>
+      <li><a target="_blank" href="u1">LegoFan101</a></li>
+      <li><a target="_blank" href="u10">Grizzly10513</a></li>
+      <li><a target="_blank" href="u52">CapnSkye</a></li>
+      <li><a target="_blank" href="u24">Cabey9</a></li>
+      <li><a target="_blank" href="u11">Hobino</a></li>
+      <li><a target="_blank" href="u109">rioforce</a></li>
+    </ul>
+  </div>
 
-<h3 id="modh">Mythrans</h3>
-<div id="mod" class="box">
-<ul>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u100">le717</a></li>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u188">Nealybealy</a></li>
-</ul>
-</div>
+    <h3 id="modh">Mythrans</h3>
+    <div id="mod" class="box">
+      <ul>
+        <li><a target="_blank" href="u100">le717</a></li>
+        <li><a target="_blank" href="u188">Nealybealy</a></li>
+      </ul>
+    </div>
 
-<h3 id="retiredh">Retired Staff</h3>
-<div id="retired" class="box">
-<ul>
-    <li><a target="_blank" href="http://legouniversenews.forummotion.com/u5">agentminky</a></li>
-</ul>
-</div>
+    <h3 id="retiredh">Retired Staff</h3>
+    <div id="retired" class="box">
+      <ul>
+        <li><a target="_blank" href="u5">agentminky</a></li>
+      </ul>
+    </div>
 
-<!-- Minifigure image, taken by Hobino -->
-<img id="minifig" alt="Image of minifigure" src="images/minifig.png" />
-</div>
+    <!-- Minifigure image, taken by Hobino -->
+    <img id="minifig" alt="Image of minifigure" src="images/minifig.png" />
+  </div>
 
+  <script>
+    /* Automatically add root link to LUNF for each member */
+    var links = document.querySelectorAll("a");
+    for (var i = 0; i < links.length; i += 1) {
+      var userID = links[i].getAttribute("href");
+      links[i].href = "http://legouniversenews.forummotion.com/" + userID;
+    }
+  </script>
 </body>
 </html>
